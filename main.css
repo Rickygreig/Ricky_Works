@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+body {
+  background-color: rgb(175, 184, 236);
+  font-family: "Source Sans Pro", sans-serif;
+}
+h1 {
+  text-align: left;
+  font-size: 300%;
+  background-color: rgb(0, 21, 139);
+}
+
+h2 {
+  font-size: 150%;
+}
+
+section {
+  text-align: left;
+  background-color: rgb(92, 157, 218);
+  size: 10px;
+}
+
+nav {
+  text-align: right;
+  background-color: rgb(0, 83, 139);
+}
+
+img.Snail1 {
+  float: left;
+}
+img.Snail2 {
+  float: right;
+  height: 150px;
+}
+
+img.Profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  float: left;
+  margin-right: 10px;
+}
