@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
 
-a:link,
-a:visited {
+ol.olLeft a:link,
+ol.olLeft a:visited {
   background-color: #657275;
   color: rgb(14, 9, 9);
   padding: 1em;
@@ -15,17 +15,47 @@ a:visited {
   margin-bottom: 1em;
 }
 
-li {
-  display: inline-block;
+ol.olRight a:link,
+ol.olRight a:visited {
+  color: rgb(92, 157, 218);
+  font-size: 175%;
 }
 
-a:hover,
-a:active {
-  background-color: rgb(70, 53, 53);
+nav.mainNav {
+  height: 80px;
+}
+
+nav.mainNav ol li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ol.olLeft a:hover {
+  background-color: rgba(122, 91, 61, 1);
+}
+
+ol.olLeft {
+  float: left;
+}
+
+ol.olRight {
+  float: right;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+ol.olRight a:hover {
+  color: rgb(0, 0, 0);
 }
 
 body {
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(107, 62, 42, 1) 33%,
+    rgba(122, 91, 61, 1) 63%,
+    rgba(147, 110, 84, 1) 100%
+  );
   font-family: "Source Sans Pro", sans-serif;
 }
 h1 {
@@ -36,27 +66,24 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 200%;
+  font-family: "Exo 2", sans-serif;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: 700;
 }
 
-p {
+section.mainText {
+  background-color: black;
+  color: #dddddd;
   text-align: left;
+  margin-left: 20px;
+  margin-right: 500px;
 }
 
 section.lower {
   text-align: right;
-  background-color: rgb(113, 119, 192);
-}
-
-section {
-  text-align: center;
-  background-color: rgb(92, 157, 218);
-  size: 10px;
-}
-
-section.socialLinks {
-  size: 10px;
-  display: right;
+  margin-right: 20px;
 }
 
 nav {
@@ -67,6 +94,7 @@ nav {
 img.Snail1 {
   float: left;
 }
+
 img.Snail2 {
   float: right;
   height: 150px;
@@ -78,4 +106,27 @@ img.Profile {
   border-radius: 75px;
   float: left;
   margin-right: 10px;
+}
+
+img.dragonEye {
+  width: 700px;
+  float: right;
+  border-radius: 50px;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
