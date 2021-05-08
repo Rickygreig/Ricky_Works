@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
 
 html,
 body {
   width: 100%;
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: #fa7a35;
+  background: url(/polyImages/backgroundSun.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 /** Layout Styles **/
 
 header {
-  height: 60px;
+  height: 70px;
   width: 100%;
 }
 
@@ -27,26 +31,31 @@ main {
   margin: 0px;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 120px);
+  height: calc(100% - 125px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
 section.sidebar {
   box-sizing: border-box;
   vertical-align: top;
-  width: 250px;
-  height: 100%;
+  width: 200px;
+  height: 300px;
   display: inline-block;
+  margin-top: 20px;
+  border-right: 1px solid black;
 }
 
 section.content {
   box-sizing: border-box;
   vertical-align: top;
   display: inline-block;
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   height: 100%;
   overflow-y: auto;
-  border-left: 4px solid rgb(74, 64, 216);
   padding-left: 15px;
+  font-family: "Exo 2", sans-serif;
 }
 
 nav.socialNested {
@@ -61,23 +70,29 @@ nav.socialNested ol li {
 }
 
 footer {
-  height: 60px;
+  height: 40px;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 /** Element Styles **/
 h1 {
-  font-size: 36px;
+  font-size: 40px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 h2 {
   font-size: 32px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 p {
   font-size: 16px;
+  font-weight: 300;
 }
 a {
   font-size: 16px;
@@ -86,15 +101,18 @@ a {
 /** Page Styles **/
 
 header {
-  font-family: "Exo 2", sans-serif;
-  background-color: cadetblue;
+  z-index: 2;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  margin-right: 100px;
 }
 
 h1.title {
-  margin-right: 100px;
-  padding-top: 10px;
-  padding-left: 20px;
   font-weight: bolder;
+  padding-top: 10px;
 }
 
 nav.socialNested a:hover {
@@ -118,48 +136,169 @@ section.sidebar li {
   text-align: left;
 }
 
-section.sidebar {
-  background-color: rgb(93, 120, 172);
-}
-
-section.sidebar li:hover a {
-  background-color: rgb(56, 84, 97);
-  color: black;
+section.sidebar a:hover {
+  color: rgb(64, 105, 61);
 }
 
 section.sidebar a {
   font-size: 24px;
   text-decoration: none;
   padding: 15px;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(78, 77, 95);
+  color: rgb(0, 0, 0);
 }
 
-section.content {
-  border: left 4px blueviolet;
-  background-color: rgb(78, 77, 95);
+section.welcomeText {
+  margin-left: 80px;
+  margin-right: 40px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  overflow-y: auto;
 }
 
-img.profile {
-  width: 420px;
+section.welcomeText h2 {
+  padding-bottom: 10px;
+}
+
+section.goalsText {
+  margin-left: 80px;
+  margin-right: 50px;
+  padding-top: 20px;
+  line-height: 30px;
+  text-align: left;
+}
+
+section.goalsText h2 {
+  padding-bottom: 10px;
+  margin-left: 255px;
+}
+
+section.contactMe {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+section.contactMe h2 {
+  margin-left: 260px;
+  margin-right: 20px;
+}
+
+section.aboutMe {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+section.languages {
+  margin-left: 80px;
+}
+
+form.email {
+  margin-left: 250px;
+  margin-top: 25px;
+  padding: 15px;
+  width: 300px;
+  background-color: rgb(29, 61, 131, 0.3);
+  text-align: left;
+  border-radius: 10px;
+}
+
+form.email input[type="text"],
+form.email textarea {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+form.email textarea {
+  width: 286px;
+}
+
+input.submit {
+  background-color: rgb(62, 106, 202, 0.2);
+  padding: 10px;
   float: right;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+img.profileR {
+  width: 220px;
+  float: right;
+  margin-bottom: 20px;
   margin-right: 20px;
   margin-left: 20px;
+  border-radius: 10px;
+}
+
+img.profileL {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+img.headShot {
+  border-radius: 10px;
+  width: 220px;
+  float: left;
+  margin-right: 40px;
 }
 
 img.snail1 {
   float: left;
-  width: 60px;
+  width: 40px;
   padding-left: 50px;
 }
 
 img.snail2 {
   float: right;
-  width: 60px;
+  width: 40px;
   padding-right: 50px;
 }
 
-footer {
-  background-color: cadetblue;
+img.languageLogo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+img.languageLogojs {
+  padding-top: 5px;
+  width: 115px;
+  height: 115px;
+}
+
+img.languageLogop {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+section.footerLogos {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+img.footerLogo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+img.footerJS {
+  padding-top: px;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 2px;
+}
+
+img.footerPy {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 7px;
 }
