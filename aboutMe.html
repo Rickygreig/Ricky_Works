@@ -5,6 +5,12 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="stylesheet" type="text/css" href="/css/mobile.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Javascript/handlebars-v4.7.7.js"></script>
     <script src="/Javascript/main.js" type="text/javascript"></script>
     <script
       src="https://kit.fontawesome.com/4140d277a4.js"
@@ -16,64 +22,37 @@
     <header>
       <h1 class="title">Ricky Works</h1>
       <p class="title">Designer Extraordinaire</p>
-      <nav class="socialNested">
-        <ol>
-          <li>
-            <a class="github" href="https://github.com/Rickygreig"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a class="twitter" href="https://twitter.com/rickygreig3"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              class="linkedIn"
-              href="https://www.linkedin.com/in/ricky-greig-484955211/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-        </ol>
-      </nav>
+      <div id="socialData"></div>
     </header>
 
     <main>
-      <section class="sidebar">
-        <nav>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aboutMe.html"> About Me</a></li>
-            <li>
-              <a href="projects.html">Projects</a>
-            </li>
-          </ol>
-        </nav>
-      </section>
+      <section id="sidebar" class="sidebar"></section>
+
       <section class="content">
         <section class="aboutMe">
           <h2>About Me</h2>
           <p>
             A little bit about myself; I have been an ICU nurse for the past 5
             years or so. During that time I quickly sharpened many skills that
-            have proven valuable in programing. I developed strong leadership,
-            managerial, and critical thinking skills throughout my career.
+            have proven to be valuable in programming. My critical thinking
+            skills allow me to pick apart and break hard problems down into more
+            managable ones. While my leadership and communication skills allow
+            me to work seemlessly as part of a team.
           </p>
           <h3>Charge Nurse</h3>
           <p>
             As a chanrge nurse I was in charge of keeping an updated patient
             list, as well as admiting and discharging patients on and off the
             unit. This role required detail contric communitcation between me,
-            the other nurses on the unit, house supervisors, as well as doctors.
-            Given the nature of an ICU setting, the status of patients change
-            moment to moment, so swift collaboration and action is critical.
+            the other nurses on the unit, house supervisors, as well as doctors
+            and residents. Given the nature of an ICU setting, the status of
+            patients can change moment to moment, so close collaboration and
+            immediate action was critical.
           </p>
           <h3>Lead Preceptor</h3>
           <p>
             Another role I had during my nursing career was lead preceptor for
-            the ICU. All new hires would be with me for at least part of their
+            the ICU. I would precept all new hires for at least part of their
             orientation, if not all of it. I found training new grads the most
             rewarding. They were a blank slate so any thing I taught them had
             the potential to effect their practice indefinetly. I believe this
@@ -87,32 +66,26 @@
             of the options were very apealling. In my mind I had two realistic
             options, go into hospital administation or go back to school for a
             masters degree. Neither of those options seemed very appealing at
-            the time, especially when considering my ICU had been through 4
-            managers in my 5 years there.
+            the time, this is when I started to explore the world of programing.
           </p>
           <h3>Programing</h3>
           <p>
-            I had always had a curriosity for programing and developing, but the
+            I always had a curriosity for programing and developing, but the
             opportunity never fully presented itself. In highschool I took an
             intro to programing class, however I wasn't hooked. The class wasn't
-            that great and it didn't make programing an attractive career.
-            Fastforward 10 years to now, and it is proving to be an amazing
-            opportunity. In April this year I made the decision to hit the
-            breaks on my nursing career and comit to coding full time. I am
+            focused on problem solving and it didn't make programing an
+            attractive career. Fastforward to now, and it is proving to be an
+            amazing opportunity. In April this year I made the decision to hit
+            the breaks on my nursing career and comit to coding full time. I am
             focusing on HTML, CSS, and Javascript to start, but I plan to begin
-            developing with Python and other languages very soon
+            developing with Python and other languages very soon.
           </p>
         </section>
       </section>
     </main>
 
     <footer>
-      <section class="footerLogos">
-        <img class="footerLogo" src="/polyImages/htmlLogo.jpg" alt="" />
-        <img class="footerLogo" src="/polyImages/cssLogo.jpg" alt="" />
-        <img class="footerJS" src="/polyImages/javascriptLogo.png" alt="" />
-        <img class="footerPy" src="/polyImages/pythonLogo.png" alt="" />
-      </section>
+      <section id="footerLogos" class="footerLogos"></section>
     </footer>
   </body>
 </html>

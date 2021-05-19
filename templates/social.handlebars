@@ -1,0 +1,11 @@
+<nav class="socialNested">
+    <ol>
+        {{#each presence}}
+        <li>
+            <a class="{{this.brand}}" href="{{this.url}}">
+                <i class="fab fa-{{this.brand}}"></i>
+            </a>
+        </li>
+        {{/each}}
+    </ol>
+</nav>

@@ -77,4 +77,15 @@
     height: initial;
     overflow-y: visible;
   }
+
+  section.rps {
+    display: inline-block;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 170px;
+    margin-bottom: 50px;
+  }
 }

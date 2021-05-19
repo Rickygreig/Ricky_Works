@@ -1,0 +1,12 @@
+<section class="project">
+    <h2>These are my projects</h3>
+    <p>Clicking the screenshots will take you to my code on GitHub.</p>
+    <ol>
+        {{#each projects}}
+        <li>
+            <a class="{{this.project}}" href="{{this.url}}"><img class="{{this.project}}" src="{{this.img}}" alt="{{""}}"></a>
+                
+        </li> 
+        {{/each}}
+    </ol>
+</section>

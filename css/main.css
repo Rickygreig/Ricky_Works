@@ -7,7 +7,6 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #fa7a35;
   background: url(/polyImages/backgroundSun.jpg) no-repeat center center fixed;
   background-size: cover;
 }
@@ -18,7 +17,6 @@ header {
   height: 70px;
   width: 100%;
 }
-
 section {
   padding: 0px;
   margin: 0px;
@@ -31,7 +29,7 @@ main {
   margin: 0px;
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 125px);
+  height: calc(100% - 130px);
   backdrop-filter: blur(6px);
   background-color: rgba(255, 255, 255, 0.55);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
@@ -56,6 +54,7 @@ section.content {
   overflow-y: auto;
   padding-left: 15px;
   font-family: "Exo 2", sans-serif;
+  line-height: 30px;
 }
 
 nav.socialNested {
@@ -70,7 +69,7 @@ nav.socialNested ol li {
 }
 
 footer {
-  height: 40px;
+  height: 50px;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -81,13 +80,15 @@ h1 {
   font-size: 40px;
   font-family: "Josefin Sans", sans-serif;
   color: #000000;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
 }
 h2 {
   font-size: 32px;
+  padding-bottom: 10px;
 }
 h3 {
   font-size: 24px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 p {
@@ -108,11 +109,12 @@ header {
 .title {
   text-align: center;
   margin-right: 100px;
+  text-shadow: 1px 1px #ffffff;
 }
 
 h1.title {
   font-weight: bolder;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 nav.socialNested a:hover {
@@ -134,10 +136,11 @@ section.sidebar li {
   text-decoration: none;
   cursor: pointer;
   text-align: left;
+  text-shadow: 1px 1px #ffffff;
 }
 
 section.sidebar a:hover {
-  color: rgb(64, 105, 61);
+  color: rgba(37, 62, 172);
 }
 
 section.sidebar a {
@@ -152,20 +155,15 @@ section.welcomeText {
   margin-right: 40px;
   margin-top: 50px;
   padding-bottom: 20px;
-  line-height: 30px;
   text-align: left;
   border-bottom: 1px solid black;
   overflow-y: auto;
 }
 
-section.welcomeText h2 {
-  padding-bottom: 10px;
-}
-
 section.goalsText {
   margin-left: 80px;
   margin-right: 50px;
-  padding-top: 20px;
+  padding-top: 50px;
   line-height: 30px;
   text-align: left;
 }
@@ -178,20 +176,50 @@ section.goalsText h2 {
 section.contactMe {
   margin-top: 20px;
   margin-left: 80px;
+  margin-right: 500px;
 }
 
 section.contactMe h2 {
-  margin-left: 260px;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 section.aboutMe {
-  margin-top: 20px;
   margin-left: 80px;
+  margin-right: 50px;
+  padding-top: 15px;
+  line-height: 30px;
+  text-align: left;
 }
 
 section.languages {
   margin-left: 80px;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 30px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  overflow-y: auto;
+}
+
+section.languages ol li {
+  display: inline-block;
+}
+
+section.project {
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 40px;
+}
+
+section.project ol li {
+  float: left;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+section.project ol li a {
+  text-decoration: none;
 }
 
 form.email {
@@ -212,15 +240,13 @@ form.email textarea {
 }
 
 form.email textarea {
-  width: 286px;
+  width: 200px;
+  float: left;
 }
 
 input.submit {
   background-color: rgb(62, 106, 202, 0.2);
   padding: 10px;
-  float: right;
-  margin-right: 30px;
-  margin-bottom: 20px;
 }
 
 img.profileR {
@@ -264,11 +290,9 @@ img.languageLogo {
   width: 100px;
   height: 100px;
   margin-bottom: 5px;
-  display: inline-block;
 }
 
-img.languageLogojs {
-  padding-top: 5px;
+img.languageLogoJs {
   width: 115px;
   height: 115px;
 }
@@ -279,26 +303,31 @@ img.languageLogop {
   margin-bottom: 10px;
 }
 
-section.footerLogos {
+section.footerLogos ol li {
   margin-left: 20px;
-  margin-top: 5px;
+  display: inline-block;
 }
+
 img.footerLogo {
   width: 40px;
   height: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   display: inline-block;
 }
 
 img.footerJS {
-  padding-top: px;
+  margin-top: 5px;
   width: 46px;
   height: 46px;
-  margin-bottom: 2px;
 }
 
 img.footerPy {
   width: 36px;
   height: 36px;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
+}
+
+img.rps {
+  width: 300px;
+  border-radius: 60px;
 }
